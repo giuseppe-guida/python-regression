@@ -1,2 +1,2 @@
-# python-machine-learning
-Repository containing machine learning algorithms in python
+# python-regression
+Repository containing machine learning regression algorithms in python
