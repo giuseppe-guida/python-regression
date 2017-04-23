@@ -1,12 +1,9 @@
-print(__doc__)
-
 import matplotlib.pyplot as plt
 import numpy as np
 from sklearn import datasets, linear_model
 
 # Load the diabetes dataset
 diabetes = datasets.load_diabetes()
-
 
 # Use only one feature
 diabetes_X = diabetes.data[:, np.newaxis, 2]
@@ -34,9 +31,9 @@ print("Mean squared error: %.2f"
 print('Variance score: %.2f' % regr.score(diabetes_X_test, diabetes_y_test))
 
 # Plot outputs
-plt.scatter(diabetes_X_test, diabetes_y_test,  color='black')
-plt.plot(diabetes_X_test, regr.predict(diabetes_X_test), color='blue',
-         linewidth=3)
+
+plt.scatter(diabetes_X_test, diabetes_y_test, color='black')
+plt.plot(diabetes_X_test, regr.predict(diabetes_X_test), color='blue', linewidth=3)
 
 plt.xticks(())
 plt.yticks(())
