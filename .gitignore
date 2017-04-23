@@ -1,0 +1,23 @@
+# Python compiled stuff cache
+__pycache__/
+.cache/
+*.pyc
+.tox/
+
+# Python virtual environment
+venv/
+
+# Code coverage results
+.coverage
+
+# Directory for temporary stuff
+tmp/
+
+# Package building/installing
+build/
+dist/
+*.egg-info/
+.eggs/
+
+.idea/
+htmlcov/
